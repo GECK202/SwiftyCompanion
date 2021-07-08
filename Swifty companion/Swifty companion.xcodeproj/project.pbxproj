@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262391C4269622EA00B0BA9D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262391C3269622EA00B0BA9D /* ImageLoader.swift */; };
+		262391C62696238000B0BA9D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262391C52696238000B0BA9D /* ImageView.swift */; };
+		262391C82696703C00B0BA9D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262391C72696703C00B0BA9D /* ErrorView.swift */; };
 		263E8C01268B8B3E002FACDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E8C00268B8B3E002FACDB /* AppDelegate.swift */; };
 		263E8C03268B8B3E002FACDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E8C02268B8B3E002FACDB /* SceneDelegate.swift */; };
 		263E8C05268B8B3E002FACDB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E8C04268B8B3E002FACDB /* SearchView.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262391C3269622EA00B0BA9D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		262391C52696238000B0BA9D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		262391C72696703C00B0BA9D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		263E8BFD268B8B3E002FACDB /* Swifty companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		263E8C00268B8B3E002FACDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		263E8C02268B8B3E002FACDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 				263E8C04268B8B3E002FACDB /* SearchView.swift */,
 				26F5D288269526AE002015F1 /* BaseView.swift */,
 				263E8C14268BAB93002FACDB /* DetailView.swift */,
+				262391C52696238000B0BA9D /* ImageView.swift */,
+				262391C72696703C00B0BA9D /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 				26F5D28626952660002015F1 /* ViewRouter.swift */,
 				26F5D28D26952CE6002015F1 /* Connection.swift */,
 				26F5D29226954290002015F1 /* LoadDetail.swift */,
+				262391C3269622EA00B0BA9D /* ImageLoader.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -202,9 +211,12 @@
 			files = (
 				26F5D28726952660002015F1 /* ViewRouter.swift in Sources */,
 				263E8C01268B8B3E002FACDB /* AppDelegate.swift in Sources */,
+				262391C4269622EA00B0BA9D /* ImageLoader.swift in Sources */,
 				263E8C15268BAB93002FACDB /* DetailView.swift in Sources */,
+				262391C62696238000B0BA9D /* ImageView.swift in Sources */,
 				26F5D289269526AE002015F1 /* BaseView.swift in Sources */,
 				26F5D296269543D6002015F1 /* Student.swift in Sources */,
+				262391C82696703C00B0BA9D /* ErrorView.swift in Sources */,
 				263E8C03268B8B3E002FACDB /* SceneDelegate.swift in Sources */,
 				26F5D28E26952CE6002015F1 /* Connection.swift in Sources */,
 				26F5D29326954290002015F1 /* LoadDetail.swift in Sources */,

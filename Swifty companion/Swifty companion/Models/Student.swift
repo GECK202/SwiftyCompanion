@@ -8,18 +8,41 @@
 
 import Foundation
 
+struct Skill: Identifiable {
+    let id = UUID()
+    let name: String
+    let val: Float
+}
+
+struct Project: Identifiable {
+    enum StatusProject:String {
+        case success
+        case loading
+        case fail
+    }
+    let id = UUID()
+    let name: String
+    let slug: String
+    let status: String
+    let validated: Bool
+    let finalMark: Int
+    let statusProject: StatusProject
+}
+
 struct Student {
-    var nickName: String?
-    var phone:String?
-    var wallet:Int?
-    var displayname:String?
-    var image_url:String?
-    var location:String?
-    var pool_year:String?
-    var pool_month:String?
-    var campus_city:String?
-    var campus_country:String?
-    var correction_point:Int!
-    var level:Double?
-    var email:String?
+    var nickName = ""
+    var phone = ""
+    var wallet = 0
+    var displayname = ""
+    var image_url = ""
+    var location = ""
+    var pool_year = ""
+    var pool_month = ""
+    var campus_city = ""
+    var campus_country = ""
+    var correction_point = 0
+    var level = 0.0
+    var email = ""
+    var skills = [Skill]()
+    var projects = [Project]()
 }

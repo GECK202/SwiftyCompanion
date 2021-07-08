@@ -11,6 +11,8 @@ import SwiftUI
 struct SearchView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var detail: LoadDetail
+    @State var error = false
     
     var body: some View {
         VStack() {
@@ -18,22 +20,31 @@ struct SearchView: View {
             TextField("Student nickname", text: $viewRouter.nickName)
                 .padding()
                 .background(Color.white)
+                .foregroundColor(.black)
+                .clipShape(RoundedRectangle(cornerRadius: CGFloat(20)))
                 .padding()
-            Button(action: {
-                self.viewRouter.currentPage = "detailView"
-            }){
-                Text("Find")
-                    .foregroundColor(.black)
+            HStack {
+                Button(action: {
+                    self.detail.getDetail(nickName: self.viewRouter.nickName, token: self.viewRouter.api.token)
+                }){
+                    HStack {
+                        Spacer()
+                        Text("Find")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                }
             }
             .padding()
             .background(Color(red: 0.5, green: 0.9, blue: 0.7))
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat(20)))
             .padding(.horizontal)
             Spacer()
             Spacer()
         }
     }
 }
+
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {

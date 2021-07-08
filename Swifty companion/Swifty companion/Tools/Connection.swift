@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class Connection{
     
-    private var token = ""
+    var token = ""
     
     func getToken() {
         if token.isEmpty {

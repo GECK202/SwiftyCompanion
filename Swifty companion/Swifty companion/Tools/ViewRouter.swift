@@ -12,11 +12,7 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
 
-    private var api = Connection()
-    
-    private var detail = LoadDetail()
-    
-    var student:Student
+    var api = Connection()
     
     let objectWillChange = PassthroughSubject<ViewRouter,Never>()
 
